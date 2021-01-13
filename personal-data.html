@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="header bg-color text-white py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5 class="my-0"> <i class="fas fa-user"></i> مرحبا بك <span> اسلام سعيد</span></h5>
+        </div>
+        <div>
+          <h5 class="my-0"> <i class="far fa-calendar-alt"></i> اخر دخول كان بتاريخ </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <!-- job owner  -->
+    <div class="work-o">
+      <div class=" text-center py-5 def-own">
+        <div class="text-left ">
+          <button class="btn btn-info " id="edit"><i class="fas fa-pencil-alt"></i> تعديل </button>
+        </div>
+        <h3 class=""> <img class="p-info" src="./images/personal-information.png" alt=""> البيانات الشخصية</h3>
+      </div>
+      <form action="" class="mb-5 form-user">
+        <div class="row w-100 m-0 p-0">
+          <div class="col-md-6">
+            <div class="form-group text-right">
+              <label class="font-weight-bold" for="">الإسم <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" value="محمد احمد على">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group text-right">
+              <label class="font-weight-bold" for="">رقم البطاقة  <span class="text-danger">*</span></label>
+              <div class="form-group text-right">
+                <input type="number" class="form-control" value=" محتوى فارغ">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group text-right">
+              <label class="font-weight-bold" for="">هل لديك رقم جامعى  <span class="text-danger">*</span></label>
+              <div class="d-block d-flex">
+                <div class="ml-4">
+                  <div><input id="sal-ng" aria-checked="true" checked name="salary-type" type="radio"
+                      class="ml-2"><label for="sal-ng">نعم
+                    </label></div>
+                </div>
+                <div>
+                  <div><input id="sal-ng2" aria-checked="false" name="salary-type" type="radio" class="ml-2"><label
+                      for="sal-ng2">لا </label></div>
+                </div>
+              </div>
+              <div class="row w-100 m-0 p-0 salary-amount">
+                <div class="col-md-12 p-0">
+                  <div class="form-group text-right">
+                    <p>من فضلك قم بكتابة الرقم الجامعى</p>
+                    <input type="password" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group text-right">
+              <label class="font-weight-bold" for="">رقم الجوال  <span class="text-danger">*</span></label>
+              <div class="form-group text-right">
+                <input type="number" class="form-control" value=" محتوى فارغ">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group text-right">
+              <label class="font-weight-bold" for="">البريد الإلكترونى  <span class="text-danger">*</span></label>
+              <div class="form-group text-right">
+                <input type="email" class="form-control" value=" example@email.com">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group text-right">
+              <label class="font-weight-bold" for="">الجنسية:  <span class="text-danger">*</span> </label>
+              <select name="" class="form-control py-0 px-2" id="">
+                <option selected value=""> اختر الجنسية</option>
+                <option value="">الجنسية</option>
+                <option value="">الجنسية</option>
+                <option value="">الجنسية</option>
+                <option value="">الجنسية</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group text-right">
+              <label class="font-weight-bold" for="">الدولة  <span class="text-danger">*</span> </label>
+              <select name="" class="form-control py-0 px-2" id="">
+                <option selected value=""> المملكة العربية السعودية</option>
+                <option value="">الدولة</option>
+                <option value="">الدولة</option>
+                <option value="">الدولة</option>
+                <option value="">الدولة</option>
+              </select>
+            </div>
+          </div>  
+          <div class="col-md-6">
+            <div class="form-group text-right">
+              <label class="font-weight-bold" for="">المدينة: </label>
+              <select name="" class="form-control py-0 px-2" id="">
+                <option value=""> اختر المدينة</option>
+                <option selected value="">الرياض</option>
+                <option value="">المدينة</option>
+                <option value="">المدينة</option>
+                <option value="">المدينة</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group text-right">
+              <label class="font-weight-bold" for="">الصورة الشخطية  <span class="text-danger">*</span></label>
+              <div class="form-group text-right">
+                <label id="imgP" class="btn btn-info" for="userPicture"> <i class="far fa-image"></i> قم باختيار صورة</label>
+                <span class="pic-val"></span>
+                <input id="userPicture" type="file" class="w-0" value=" محتوى فارغ" style="visibility:hidden;">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group text-right">
+              <label class="font-weight-bold" for="">الجنس:</label>
+              <div class="d-block d-flex">
+                <div class="ml-4">
+                  <div><input name="end-lan" type="radio" class="ml-2" id="male"><label for="male"> ذكر
+                    </label></div>
+                </div>
+                <div class="ml-4">
+                  <div><input name="end-lan" type="radio" class="ml-2" id="female"><label for="female">انثي</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
